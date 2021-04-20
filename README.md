@@ -6,6 +6,10 @@ It is a Reorganization of [jzakiya](https://forum.crystal-lang.org/u/jzakiya)'s 
 
 It is for sake of use in https://github.com/edin/raytracer under the `crystal` sub-folder; also for re-use elsewhere, as this is a shard.
 
+See also forum posts:
+* https://forum.crystal-lang.org/t/doing-raytracer-in-crystal/3029
+* https://forum.crystal-lang.org/t/doing-raytracer-in-crystal/3029/54?u=drhuffman12
+
 ## Installation
 
 1. Add the dependency to your `shard.yml`:
