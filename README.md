@@ -49,7 +49,7 @@ The compiled file will be in the `examples` folder or what ever you specify afte
 
 `examples/jzakiya`
 
-This will generate the example image (based on the image used for https://github.com/edin/raytracer) called `crystal-raytracer.png` in (for now) the root of the repo.
+This will generate the example image (based on the image used for https://github.com/edin/raytracer) called `crystal-raytracer.png` in (for now) the root of the repo. (TODO: Get an actual generated image(s) from code in https://github.com/edin/raytracer to compare... or was that done already?)
 
 This file will look like:
 
