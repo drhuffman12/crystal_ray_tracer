@@ -1,4 +1,4 @@
-# TODO: Write documentation for `CrystalRayTracer`
+require "stumpy_png"
 require "./crystal_ray_tracer/*"
 
 module CrystalRayTracer
