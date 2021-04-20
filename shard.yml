@@ -5,7 +5,9 @@ authors:
   - Jabari Zakiya (jzakiya)
   - Daniel Huffman <drhuffman12@gmail.com>
 
+# # TODO: Set min Crystal version, or not?
 # crystal: 1.0.0
+# crystal: 1.1.0
 
 license: MIT
 
