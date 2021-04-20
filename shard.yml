@@ -5,6 +5,11 @@ authors:
   - Jabari Zakiya (jzakiya)
   - Daniel Huffman <drhuffman12@gmail.com>
 
-crystal: 1.0.0
+# crystal: 1.0.0
 
 license: MIT
+
+dependencies:
+  stumpy_png:
+    github: stumpycr/stumpy_png
+    version: "~> 5.0"
