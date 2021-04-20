@@ -14,9 +14,9 @@ dependencies:
     github: stumpycr/stumpy_png
     # version: "~> 5.0"
 
-  ameba:
-    github: crystal-ameba/ameba
-    # version: "~> 0.14.3"
+  # ameba:
+  #   github: crystal-ameba/ameba
+  #   # version: "~> 0.14.3"
 
   spectator:
     gitlab: arctic-fox/spectator
