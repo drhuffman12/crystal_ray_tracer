@@ -1,9 +1,9 @@
-require "./spec_helper"
+require "./spectator_helper"
 
-describe CrystalRayTracer do
+Spectator.describe CrystalRayTracer do
   # TODO: Write tests
 
   pending "works" do
-    false.should eq(true)
+    expect(false).to be_true
   end
 end
