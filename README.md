@@ -1,6 +1,8 @@
 # crystal_ray_tracer
 
-TODO: Write a description here
+Reorganizing [jzakiya](https://forum.crystal-lang.org/u/jzakiya)'s existing code into a Crystal-lang 'shard' library.
+For sake of use in https://github.com/edin/raytracer under the `crystal` sub-folder.
+Also for re-use elsewhere, as this is a shard.
 
 ## Installation
 
@@ -36,4 +38,5 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [Daniel Huffman](https://github.com/your-github-user) - creator and maintainer
+- [Jabari Zakiya](https://forum.crystal-lang.org/u/jzakiya) - Ported and optimized Ruby code to Crystal-lang (See: https://forum.crystal-lang.org/t/doing-raytracer-in-crystal/3029)
+- [Daniel Huffman](https://github.com/your-github-user) - Repo creator and maintainer - Helping reorganize Crystal code

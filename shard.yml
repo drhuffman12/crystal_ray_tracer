@@ -2,6 +2,7 @@ name: crystal_ray_tracer
 version: 0.1.0
 
 authors:
+  - Jabari Zakiya (jzakiya)
   - Daniel Huffman <drhuffman12@gmail.com>
 
 crystal: 1.0.0
