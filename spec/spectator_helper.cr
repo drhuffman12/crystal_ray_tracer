@@ -1,2 +1,2 @@
-# require "./spec_helper"
-# require "spectator"
+require "./spec_helper"
+require "spectator"

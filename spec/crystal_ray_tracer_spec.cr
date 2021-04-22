@@ -1,8 +1,8 @@
-require "./spec_helper"
+# require "./spec_helper"
 
-describe CrystalRayTracer do
-  # TODO: Write tests
-end
+# describe CrystalRayTracer do
+#   # TODO: Write tests
+# end
 
 # # TODO: Spectator seems to not work with Windows; I get:
 # ```
@@ -11,12 +11,12 @@ end
 # Error: Process completed with exit code 1.
 # ```
 
-# require "./spectator_helper"
+require "./spectator_helper"
 
-# Spectator.describe CrystalRayTracer do
-#   # TODO: Write tests
+Spectator.describe CrystalRayTracer do
+  # TODO: Write tests
 
-#   pending "works" do
-#     expect(false).to be_true
-#   end
-# end
+  pending "works" do
+    expect(false).to be_true
+  end
+end
