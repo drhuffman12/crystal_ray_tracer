@@ -1,10 +1,10 @@
-require "./../spec_helper"
+require "./../spectator_helper"
 
-describe CrystalRayTracer::DefaultScene do
+Spectator.describe CrystalRayTracer::DefaultScene do
   context "#initialize" do
     context "with no params passed in" do
       it "does not raise" do
-        (CrystalRayTracer::DefaultScene.new).should_not be_nil # should_not raise_error
+        expect(CrystalRayTracer::DefaultScene.new).not_to raise_error
       end
     end
   end

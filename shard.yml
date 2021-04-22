@@ -21,11 +21,9 @@ dependencies:
   #   github: crystal-ameba/ameba
   #   # version: "~> 0.14.3"
 
-  # # TODO: Windows Compatibility? See: https://gitlab.com/arctic-fox/spectator/-/issues/58
   spectator:
     gitlab: arctic-fox/spectator
     branch: master
-  #   # version: ">= 0.9.35"
 
   faker:
     github: askn/faker
