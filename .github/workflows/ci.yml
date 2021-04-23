@@ -37,7 +37,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build
-        run: shards install --ignore-crystal-version
+        run: shards install --ignore-crystal-version --skip-postinstall
 
       - name: Test
         run: crystal spec
@@ -57,7 +57,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build
-        run: shards install --ignore-crystal-version
+        run: shards install --ignore-crystal-version --skip-postinstall
 
       - name: Docs
         run: scripts/regen_docs

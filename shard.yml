@@ -16,9 +16,12 @@ dependencies:
     github: stumpycr/stumpy_png
     # version: "~> 5.0"
 
+  stumpy_bmp:
+    github: stumpycr/stumpy_bmp
+
   # # TODO: Windows Compatibility? See: https://github.com/crystal-ameba/ameba/issues/230
-  # ameba:
-  #   github: crystal-ameba/ameba
+  ameba:
+    github: crystal-ameba/ameba
   #   # version: "~> 0.14.3"
 
   spectator:
