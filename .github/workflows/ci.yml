@@ -38,13 +38,16 @@ jobs:
 
       - name: Build
         # run: shards install --ignore-crystal-version --skip-postinstall
-        run: shards install --ignore-crystal-version --production
+        run: shards install --ignore-crystal-version --without-development
 
       - name: Test
         run: crystal spec
 
       - name: Check formatting
         run: crystal tool format --check src spec
+
+      # - name: Check style/etc
+      #   run: crystal bin/ameba.cr
 
   docs:
     runs-on: ubuntu-latest
@@ -59,7 +62,7 @@ jobs:
 
       - name: Build
         # run: shards install --ignore-crystal-version --skip-postinstall
-        run: shards install --ignore-crystal-version --production
+        run: shards install --ignore-crystal-version --without-development
 
       - name: Docs
         run: scripts/regen_docs

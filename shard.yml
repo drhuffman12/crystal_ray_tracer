@@ -18,12 +18,6 @@ dependencies:
 
   stumpy_bmp:
     github: stumpycr/stumpy_bmp
-
-  # # TODO: Windows Compatibility? See: https://github.com/crystal-ameba/ameba/issues/230
-  ameba:
-    github: crystal-ameba/ameba
-  #   # version: "~> 0.14.3"
-
   spectator:
     gitlab: arctic-fox/spectator
     branch: master
@@ -33,3 +27,10 @@ dependencies:
 
   hardware:
     github: crystal-community/hardware
+
+development_dependencies:
+
+  # # TODO: Windows Compatibility? See: https://github.com/crystal-ameba/ameba/issues/230
+  ameba:
+    github: crystal-ameba/ameba
+  #   # version: "~> 0.14.3"
