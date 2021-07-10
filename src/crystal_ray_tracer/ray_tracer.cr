@@ -85,8 +85,8 @@ module CrystalRayTracer
         spawn do
           screenWidth.times do |x|
             # spawn do
-              color = self.traceRay(Ray.new(scene.camera.pos, self.getPoint(x, y, screenWidth, screenHeight, scene.camera)), scene, 0)
-              channel.send({x, y, color})
+            color = self.traceRay(Ray.new(scene.camera.pos, self.getPoint(x, y, screenWidth, screenHeight, scene.camera)), scene, 0)
+            channel.send({x, y, color})
             # end
             # r, g, b = Color.toDrawingColor(color)
             # image.set(x, y, StumpyCore::RGBA.from_rgb(r, g, b))
