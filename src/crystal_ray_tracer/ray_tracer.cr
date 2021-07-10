@@ -77,5 +77,28 @@ module CrystalRayTracer
         end
       end
     end
+
+    def render_parallel(scene, image, screenWidth, screenHeight)
+      channel = Channel(Tuple(Int32, Int32, Color)).new
+
+      screenHeight.times do |y|
+        spawn do
+          screenWidth.times do |x|
+            # spawn do
+              color = self.traceRay(Ray.new(scene.camera.pos, self.getPoint(x, y, screenWidth, screenHeight, scene.camera)), scene, 0)
+              channel.send({x, y, color})
+            # end
+            # r, g, b = Color.toDrawingColor(color)
+            # image.set(x, y, StumpyCore::RGBA.from_rgb(r, g, b))
+          end
+        end
+      end
+
+      (screenHeight * screenWidth).times do
+        x, y, color = channel.receive
+        r, g, b = Color.toDrawingColor(color)
+        image.set(x, y, StumpyCore::RGBA.from_rgb(r, g, b))
+      end
+    end
   end
 end
