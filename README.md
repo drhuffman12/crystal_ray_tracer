@@ -41,7 +41,22 @@ For a longer, more advanced build to get better performance, enter:
 `crystal build examples/jzakiya.cr -o examples/jzakiya --release`
 
 This doesn't (at least not yet) make much use of multi-threaded fibers, but you can enable it like this:
-`crystal build examples/jzakiya.cr -o examples/jzakiya --release -Dpreview_mt`
+`crystal build examples/jzakiya.cr -o examples/jzakiya --release -Dpreview_mt`. If you are running w/ multiple fibers and you get an error like `Unhandled exception: Cannot allocate new fiber stack: Cannot allocate memory (RuntimeError)`, then you'll want to check the memory settings of your OS...
+
+* For Linux, this is like:
+  ```
+  $ sysctl vm.max_map_count
+  vm.max_map_count = 65530
+  ```
+
+... and adjust the memory ...
+
+* For Linux, this is like (set `SOME_BIGGER_VALUE` as appplicable):
+  ```
+    $ SOME_BIGGER_VALUE=655300  sudo sysctl -w vm.max_map_count=$SOME_BIGGER_VALUE
+    [sudo] password for USERNAME_GOES_HERE:              
+    vm.max_map_count = 655300
+  ```
 
 The compiled file will be in the `examples` folder or what ever you specify after the `-o` option.
 
