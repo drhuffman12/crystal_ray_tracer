@@ -5,7 +5,9 @@ authors:
   - Jabari Zakiya (jzakiya)
   - Daniel Huffman <drhuffman12@gmail.com>
 
+# # TODO: Set min Crystal version, or not?
 # crystal: 1.0.0
+# crystal: 1.1.0
 
 license: MIT
 
@@ -14,17 +16,21 @@ dependencies:
     github: stumpycr/stumpy_png
     # version: "~> 5.0"
 
-  # ameba:
-  #   github: crystal-ameba/ameba
-  #   # version: "~> 0.14.3"
-
-  # spectator:
-  #   gitlab: arctic-fox/spectator
-  #   branch: master
-  #   # version: ">= 0.9.35"
+  stumpy_bmp:
+    github: stumpycr/stumpy_bmp
+  spectator:
+    gitlab: arctic-fox/spectator
+    branch: master
 
   faker:
     github: askn/faker
 
   hardware:
     github: crystal-community/hardware
+
+development_dependencies:
+
+  # # TODO: Windows Compatibility? See: https://github.com/crystal-ameba/ameba/issues/230
+  ameba:
+    github: crystal-ameba/ameba
+  #   # version: "~> 0.14.3"
